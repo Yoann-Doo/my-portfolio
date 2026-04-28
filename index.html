@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO Primary -->
+  <title>Doolaeghe Yoann – Développeur Informatique</title>
+  <meta name="description" content="Portfolio de Doolaeghe Yoann, développeur informatique passionné par le web moderne et la cybersécurité. Découvrez mes projets, compétences et expériences professionnelles." />
+  <meta name="keywords" content="Doolaeghe Yoann, développeur web, portfolio, Epitech, HTML, CSS, JavaScript, projets GitHub" />
+  <meta name="author" content="Doolaeghe Yoann" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://yoann-doo.github.io/" />
+
+  <!-- Visu Réseaux -->
+  <meta property="og:title" content="Doolaeghe Yoann – Développeur Informatique" />
+  <meta property="og:description" content="Portfolio de Doolaeghe Yoann, développeur informatique passionné par le web moderne." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yoann-doo.github.io/" />
+  <meta property="og:image" content="Assets/evi.epitech.jpg" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Doolaeghe Yoann – Développeur Informatique" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <canvas id="bg" aria-hidden="true"></canvas>
+
+  <!-- ── NAVIGATION ── -->
+  <nav id="navbar" role="navigation" aria-label="Navigation principale">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">Y<span>.</span>D</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks" role="list">
+        <li><a href="#about"      class="nav-link">À propos</a></li>
+        <li><a href="#skills"     class="nav-link">Compétences</a></li>
+        <li><a href="#experience" class="nav-link">Expériences</a></li>
+        <li><a href="#projects"   class="nav-link">Projets</a></li>
+        <li><a href="#contact"    class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <header class="hero" id="hero">
+    <div class="hero-avatar">
+      <img src="Assets/evi.epitech.jpg" width="200" height="200" alt="Photo de profil de Doolaeghe Yoann" loading="eager" />
+    </div>
+    <h1 data-text="Doolaeghe Yoann">Doolaeghe Yoann</h1>
+    <p class="hero-sub">Développeur Informatique &nbsp;·&nbsp; Étudiant Epitech</p>
+    <div class="hero-cta">
+      <a href="#projects" class="btn">Voir mes projets</a>
+      <a href="#contact"  class="btn btn-ghost">Me contacter</a>
+    </div>
+    <div class="hero-socials">
+      <a href="https://github.com/Yoann-Doo" target="_blank" rel="noopener noreferrer" aria-label="Profil GitHub">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.54-1.38-1.33-1.75-1.33-1.75-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.22.7.83.58C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/yoann-doolaeghe-7b439a2a2" target="_blank" rel="noopener noreferrer" aria-label="Profil LinkedIn">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.37V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.35-1.85 3.58 0 4.24 2.36 4.24 5.43v6.31zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.72V1.72C24 .77 23.21 0 22.23 0z"/></svg>
+      </a>
+    </div>
+  </header>
+
+  <!-- ── À PROPOS ── -->
+  <section id="about" class="section" aria-labelledby="about-heading">
+    <h2 id="about-heading">À propos de moi</h2>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>
+          Je m'appelle Yoann Doolaeghe, étudiant en informatique à Epitech.
+          Après un parcours atypique passant par la coiffure et la vente, j'ai pu apprendre a répondre aux besoins du client.
+        </p>
+        <p>
+          Curieux et déterminé, j'aime construire des interfaces modernes, comprendre comment les
+          systèmes fonctionnent et résoudre des problèmes concrets. Mon parcours diversifié
+          m'a appris la rigueur, le sens du client et la capacité à m'adapter rapidement.
+        </p>
+        <div class="about-actions">
+          <a href="my-portfolio/cv.pdf" class="btn" download aria-label="Télécharger le CV de Yoann Doolaeghe">
+            Télécharger mon CV
+          </a>
+        </div>
+      </div>
+      <ul class="about-facts" aria-label="Informations clés">
+        <li><span class="fact-label">Localisation</span><span class="fact-value">France</span></li>
+        <li><span class="fact-label">École</span><span class="fact-value">Epitech</span></li>
+        <li><span class="fact-label">Statut</span><span class="fact-value">Étudiant</span></li>
+        <li><span class="fact-label">Langues</span><span class="fact-value">Français · Anglais</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ── COMPÉTENCES ── -->
+  <section id="skills" class="section" aria-labelledby="skills-heading">
+    <h2 id="skills-heading">Compétences</h2>
+    <div class="skills-wrapper">
+
+      <div class="skill-group">
+        <h3 class="skill-group-title">Langages</h3>
+        <div class="skill-tags">
+          <span class="tag">HTML5</span>
+          <span class="tag">CSS3</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">MySQL</span>
+          <span class="tag">Python</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h3 class="skill-group-title">Outils & environnements</h3>
+        <div class="skill-tags">
+          <span class="tag">GitHub</span>
+          <span class="tag">VS Code</span>
+          <span class="tag">Linux</span>
+          <span class="tag">Terminal</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h3 class="skill-group-title">Soft skills</h3>
+        <div class="skill-tags">
+          <span class="tag">Curiosité</span>
+          <span class="tag">Adaptabilité</span>
+          <span class="tag">Travail en équipe</span>
+          <span class="tag">Sens du client</span>
+          <span class="tag">Autonomie</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── EXPÉRIENCES ── -->
+  <div id="experience">
+
+    <div class="experience-category section" aria-labelledby="pro-exp-heading">
+      <h2 id="pro-exp-heading">Expériences professionnelles</h2>
+      <div class="experience-grid">
+        <div class="experience-box">
+          <h4>HM</h4>
+          <p>Vendeur – 2 mois</p>
+        </div>
+        <div class="experience-box">
+          <h4>Bleu Libellule</h4>
+          <p>Vendeur – 1 mois</p>
+        </div>
+        <div class="experience-box">
+          <h4>La Boutique Du Coiffeur</h4>
+          <p>Vendeur – 2 mois</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="experience-category section" aria-labelledby="diplomas-heading">
+      <h2 id="diplomas-heading">Diplômes</h2>
+      <div class="experience-grid">
+        <div class="experience-box">
+          <h4>CAP Coiffure</h4>
+          <p>Certification professionnelle</p>
+        </div>
+        <div class="experience-box">
+          <h4>Bac STMG</h4>
+          <p>Diplôme de lycée</p>
+        </div>
+        <div class="experience-box">
+          <h4>Brevet</h4>
+          <p>Diplôme de collège</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="experience-category section" aria-labelledby="internships-heading">
+      <h2 id="internships-heading">Stages</h2>
+      <div class="experience-grid">
+        <div class="experience-box">
+          <h4>BMW</h4>
+          <p>Stage de 3 jours</p>
+        </div>
+        <div class="experience-box">
+          <h4>Kinésithérapeute</h4>
+          <p>Stage d'une semaine</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ── PROJETS GITHUB ── -->
+  <section id="projects" class="section" aria-labelledby="projects-heading">
+    <h2 id="projects-heading">Projets GitHub</h2>
+    <p class="section-sub">Mes derniers dépôts publics, mis à jour en temps réel.</p>
+    <div id="repo-list" class="projects" aria-live="polite" aria-label="Liste des projets GitHub"></div>
+    <div style="text-align:center; margin-top:2.5rem;">
+      <a href="https://github.com/Yoann-Doo" target="_blank" rel="noopener noreferrer" class="btn">
+        Voir tous mes projets →
+      </a>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <section id="contact" class="section" aria-labelledby="contact-heading">
+    <h2 id="contact-heading">Contact</h2>
+    <div class="contact-links">
+      <a href="mailto:yoann.doolaeghe@epitech.eu?subject=Hello," class="btn" aria-label="Envoyer un email à Yoann Doolaeghe">
+        ✉&nbsp; Email
+      </a>
+      <a href="https://github.com/Yoann-Doo" target="_blank" rel="noopener noreferrer" class="btn btn-ghost" aria-label="Profil GitHub de Yoann-Doo">
+        GitHub
+      </a>
+      <a href="https://www.linkedin.com/in/yoann-doolaeghe-7b439a2a2" target="_blank" rel="noopener noreferrer" class="btn btn-ghost" aria-label="Profil LinkedIn de Yoann Doolaeghe">
+        LinkedIn
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© <span id="year"></span> Doolaeghe Yoann · Développeur Informatique</p>
+    <p class="footer-links">
+      <a href="https://github.com/Yoann-Doo" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://www.linkedin.com/in/yoann-doolaeghe-7b439a2a2" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    </p>
+  </footer>
+
+  <!-- SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Doolaeghe Yoann",
+    "jobTitle": "Développeur Informatique",
+    "alumniOf": "Epitech",
+    "url": "https://yoann-doo.github.io/",
+    "sameAs": [
+      "https://github.com/Yoann-Doo",
+      "https://www.linkedin.com/in/yoann-doolaeghe-7b439a2a2"
+    ]
+  }
+  </script>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
